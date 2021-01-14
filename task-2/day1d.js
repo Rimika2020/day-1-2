@@ -1,8 +1,6 @@
 
 var arr = new Array();
 
-var click = document.getElementById("myDropdown");
-click.style.display ="none";
 function add_element_to_array(){
 
     var v = document.getElementById("text1").value.split(",");
@@ -20,14 +18,19 @@ function add_element_to_array(){
     document.getElementById("text1").value = "";
 }
 
-function myFunction() {
-    var click = document.getElementById("myDropdown");  
-         if(click.style.display ==="none") {  
-            click.style.display ="block";  
-         } else {  
-            click.style.display ="none";  
-         }   
-}
+document.querySelector('.sub').addEventListener('click',function(){
+    let ip = document.getElementById("drop").value;
+    if(ip==="1")incSort();
+    else if(ip==="2")decSort();
+    else if(ip==="3")maxNum();
+    else if(ip==="4")minNum();
+    else if(ip==="5")Sum();
+    else if(ip==="6")median();
+    else if(ip==="7")mean();
+    else if(ip==="8")stdev();
+
+});
+
 
 function incSort(){
     arr.sort(function(a, b){return a-b});

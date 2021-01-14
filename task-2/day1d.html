@@ -8,24 +8,26 @@
         <input type="button" id="button1" value="Elements" onclick="add_element_to_array();"></input>
 
         <div class="dropdown">
-            <button onclick="myFunction();" class="dropbtn" >Operations</button>
-            <div id="myDropdown" class="dropdown-content">
-                <button onclick="incSort();" value="Click">Increasing</button>
-                <br>
-                <button onclick="decSort();" value="Click" >Decreasing</button>
-                <br>
-                <button onclick="maxNum();" value="Click">Maximum</button>
-                <br>
-                <button onclick="minNum();" value="Click">Minimum</button>
-                <br>
-                <button onclick="Sum();" value="Click">Sum</button>
-                <br>
-                <button onclick="median();" value="Click">Median</button>
-                <br>
-                <button onclick="mean();" value="Click">Mean</button>
-                <br>
-                <button onclick="stdev();" value="Click">Standard Deviation</button>
-            </div>
+            
+                <select name="opr" id="drop">
+                    <option  value="1">Increasing</option>
+                    <br>
+                    <option  value="2" >Decreasing</option>
+                    <br>
+                    <option  value="3">Maximum</option>
+                    <br>
+                    <option  value="4">Minimum</option>
+                    <br>
+                    <option  value="5">Sum</option>
+                    <br>
+                    <option  value="6">Median</option>
+                    <br>
+                    <option  value="7">Mean</option>
+                    <br>
+                    <option  value="8">Standard Deviation</option>
+                </select>
+                <button class="sub">Submitt</button>
+                
           </div>
 
           <br>
